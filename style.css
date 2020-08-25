@@ -1,0 +1,10 @@
+.header__logo,
+.section-left__title {
+  font-family: 'PT Serif', serif;
+}
+
+.header__link,
+.section-left__text,
+.section-left__button {
+  font-family: 'Roboto', sans-serif;
+}
