@@ -8,3 +8,82 @@
 .section-left__button {
   font-family: 'Roboto', sans-serif;
 }
+
+body {
+  max-width: 1920px;
+  margin: 0;
+}
+
+.wrapper {
+  width: 80%;
+  margin: auto;
+}
+
+.header__logo,.header__menu {
+  display: inline-block;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo {
+  padding: 40px 0;
+  font-size: 24px;
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+}
+
+.header__link {
+  padding: 0 13px;
+  font-size: 18px;
+}
+
+.header__link:last-child {
+  padding-right: 0;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-left {
+  margin: 0;
+}
+
+.section-left__title {
+  margin: 0;
+  padding: 214px 0 40px 0;  /*214px вышло так: по макету от самой верхушки до этого блока 318px.
+                              У .main убраны паддинги и маргины, у всей левой секции то же самое и у самого заголовка также.
+                              Имеем: 318px общая высота минус 104px высота хедера = 214px*/
+  width: 40%; /*получил так: ширина заголовка 567px по макету + ширина отступа слева до заголовка 195px
+                Итого 762px - а это 40% от всей ширины макета в 1920px*/
+  font-size: 66px;
+}
+
+.image {
+  display: flex;
+  align-items: center;
+}
+
+.section-left__text {
+  margin: 0;
+  padding: 0 0 41px 0;
+  font-size: 22px;
+  width: 34%;
+}
+
+.section-left__button {
+  width: 271px; /*кнопки что-то не получилось вычислить процент - придется потом в медиазапросах уменьшать ей размер?*/
+  height: 57px;
+  background: #0056EC;
+  border-radius: 4px;
+  font-size: 18px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
