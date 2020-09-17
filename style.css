@@ -69,6 +69,7 @@ body {
   font-weight: 700;
   text-decoration: none;
   transition: opacity .5s;
+  transition: font-size .5s;
 }
 
 .header__link:last-child {margin-right: 0;}
